@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "scala";
+    src: url("../fonts/ScalaSans.ttf") format("truetype");
+}
+
+.linhaEntrada {
+    width: 100%;
+    border: 0.45mm #000000;
+    border-bottom-style: solid;
+    white-space: nowrap;
+    border-bottom-width: 0.45mm;
+}
+
+.caixaTexto {
+    text-align: center;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    display:table;
+    width: 100%;
+}
+.caixaTexto p { margin: 0px; }
+.caixaTexto > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.caixaTexto > div > p:nth-of-type(2) {
+    font-size: 0.5rem;
+}
+
+.descricaoHabilidades{
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.descricaoHabilidades span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.caixaEntrada{
+    text-align: center;
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.habilidades > div {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.habilidades .col-4{
+    padding: 3px;
+}
+
+.paginaFrente{
+    padding-top: 2.5rem;
+}
+
+.classe_de_armadura .col-xl-1{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+.classe_de_armadura .col-1 > .col-xl-12{
+    padding:0px;
+}
+
+.classe_de_armadura .col-xl-12 > p{
+    font-size: 0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

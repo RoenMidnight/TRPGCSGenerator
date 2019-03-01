@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            
+        </header>
+
+        <section>  
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12">
+                        <input type="text" id="nomePersonagem" class="linhaEntrada">
+                        <span>NOME DO PERSONAGEM</span>
+                    </div>
+                    <div class="col-xl-6 col-sm-12">
+                        <input type="text" id="nomeJogador" class="linhaEntrada">
+                        <span>JOGADOR</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-12">
+                        <input type="text" id="raca" class="linhaEntrada">
+                        <dspan>RAÇA</span>
+                    </div>
+                    <div class="col-xl-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <input type="text" id="classe" class="linhaEntrada">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" id="nivel" class="linhaEntrada">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                                <span>CLASSE</span>
+                            </div>
+                            <div class="col-3">
+                                <span>NÍVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12">
+                        <input type="text" id="tendencia" class="linhaEntrada">
+                        <span>TENDÊNCIA</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-2 col-sm-12">
+                        <input type="text" id="sexo" class="linhaEntrada">
+                        <span >SEXO</span>
+                    </div>
+                    <div class="col-xl-2 col-sm-12">
+                        <input type="text" id="idade" class="linhaEntrada">
+                        <span >IDADE</span>
+                    </div>
+                    <div class="col-xl-3 col-sm-12">
+                        <input type="text" id="divindade" class="linhaEntrada">
+                        <span >DIVINDADE</span>
+                    </div>
+                    <div class="col-xl-2 col-sm-12">
+                        <input type="text" id="tamanho" class="linhaEntrada">
+                        <span >TAMANHO</span>
+                    </div>
+                    <div class="col-xl-3 col-sm-12">
+                        <input type="text" id="deslocamento" class="linhaEntrada">
+                        <span >DESLOCAMENTO</span> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="paginaFrente">
+            <div class="container">
+                <div class='row'>
+                    <div class="col-xl-2 habilidades">
+                        <div class="row descricaoHabilidades">
+                            <div class="col-4">
+                                <span>HABILIDADES</span>
+                            </div>
+                            <div class="col-4">
+                                <span>VALOR</span>
+                            </div>
+                            <div class="col-4">
+                                <span>MOD. DE HABILIDADE</span> 
+                            </div>
+                        </div>
+                        <!--Força-->
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="caixaTexto">
+                                    <div>
+                                        <p><b>FOR</b></p>
+                                        <p><b>Força</b></p>
+                                    </div>
+                                </div> 
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="forValor" class="caixaEntrada">
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="forMod" class="caixaEntrada">
+                            </div>
+                        </div>
+                        <!--Destreza-->
+                        <div class="row">
+                            <div class="col-4">                                
+                                <div class="caixaTexto" >
+                                    <div>
+                                        <p><b>DES</b></p>
+                                        <p><b>Destreza</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="desValor" class="caixaEntrada" >
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="desMod" class="caixaEntrada" >
+                            </div>
+                        </div>      
+                        <!--Constituição-->
+                        <div class="row">
+                            <div class="col-4">                               
+                                <div class="caixaTexto" >
+                                    <div>
+                                        <p><b>CON</b></p>
+                                        <p><b>Constituição</b></p>
+                                    </div>
+                                </div>                                   
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="conValor" class="caixaEntrada" >
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="conMod" class="caixaEntrada" >
+                            </div>
+                        </div>     
+                        <!--Inteligência--> 
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="caixaTexto" >
+                                    <div>
+                                        <p><b>INT</b></p>
+                                        <p><b>Inteligência</b></p>
+                                    </div>
+                                </div>                                
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="intValor" class="caixaEntrada" >
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="intMod" class="caixaEntrada" >
+                            </div>
+                        </div>     
+                        <!--Sabedoria--> 
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="caixaTexto" >
+                                    <div>
+                                        <p><b>SAB</b><br></p>
+                                        <p><b>Sabedoria</b></p>
+                                    </div>
+                                </div>                                    
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="sabValor" class="caixaEntrada" >
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="sabMod" class="caixaEntrada" >
+                            </div>
+                        </div>   
+                        <!--Carisma-->   
+                        <div class="row">
+                            <div class="col-4">                                
+                                <div class="caixaTexto" >
+                                    <div>
+                                        <p><b>CAR</b></p>
+                                        <p><b>Carisma</b></p>
+                                    </div>
+                                </div>                               
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="carValor" class="caixaEntrada" >
+                            </div>
+                             <div class="col-4">
+                                <input type="text" id="carMod" class="caixaEntrada" >
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="row text-center">
+                                    <div class="col-2"></div>
+                                    <div class="col-5"><span>Total</span></div>
+                                    <div class="col-5"><span>Atual</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="caixaTexto">
+                                            <div>
+                                                <p><b>PV</b></p>
+                                                <p><b>Pontos de Vida</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">                                        
+                                        <input type="text" id="pvTotal" class="caixaEntrada">
+                                    </div>
+                                    <div class="col-5">                                        
+                                        <input type="text" id="pvAtuais" class="caixaEntrada">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <span>Pontos de Ação</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" id="pontosAcao" class="caixaEntrada">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Classe de Armadura e RD-->
+                        <div class="row">
+                            
+                            <div class="col-xl-8 classe_de_armadura text-center">
+                                <div class="row align-items-end">
+                                    <!--Caixa CA-->
+                                    <div class="col-xl-2">
+                                        <div class="row"><div class="col-xl-12"></div></div>
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                            <div class="caixaTexto">
+                                                    <div>
+                                                        <p><b>CA</b></p>
+                                                        <p><b>Classe de Armadura</b></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Total CA-->
+                                    <div class="col-xl-1" style="padding-left: 15px;">    
+                                        <div class="row"><div class="col-xl-12"><p>Total</p></div></div> 
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>    
+                                    <!--Plus 10-->
+                                    <div class="col-xl-1">   
+                                        <div class="row"><div class="col-xl-12"><p></p></div></div>
+                                        <div class="row"><div class="col-xl-12"><p style="font-size: 1rem;"><b>= 10 +</b></p></div></div>
+                                    </div>
+                                    <!--Meio Nível-->
+                                    <div class="col-xl-1">                                   
+                                        <div class="row"><div class="col-xl-12"><p>1/2 nível</p></div></div>
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>   
+                                    <!--Mod. Hab--> 
+                                    <div class="col-xl-1">           
+                                        <div class="row"><div class="col-xl-12"><p>Mod. de Hab</p></div></div>                                            
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>   
+                                    <!--Bonus de Armadura--> 
+                                    <div class="col-xl-1">
+                                        <div class="row"><div class="col-xl-12"><p>Bônus de Armadura</p></div></div>                                                                         
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>    
+                                    <!-- Bonus de Escudo-->
+                                    <div class="col-xl-1">   
+                                        <div class="row"><div class="col-xl-12"><p>Bônus de Escudo</p></div></div>                                                                          
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>
+                                    <!-- Mod de Tamanho -->
+                                    <div class="col-xl-1">          
+                                        <div class="row"><div class="col-xl-12"><p>Mod. de Tamanho</p></div></div>                                                                 
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>  
+                                    <!-- Outros 1-->  
+                                    <div class="col-xl-1">   
+                                        <div class="row"><div class="col-xl-12"><p>Outros</p></div></div>                                                                                
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>  
+                                    <!-- Outros 2-->    
+                                    <div class="col-xl-1">   
+                                        <div class="row"><div class="col-xl-12"><p>Outros</p></div></div>                                                                                
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>   
+                                    <!-- Outros 3-->  
+                                    <div class="col-xl-1" style="padding-right: 15px">   
+                                        <div class="row"><div class="col-xl-12"><p>Outros</p></div></div>                                                                                
+                                        <div class="row"><div class="col-xl-12"><input type="text" id="pvTotal" class="caixaEntrada"></div></div>
+                                    </div>   
+                                                  
+                                </div>
+                            </div>
+                            <!--Redução de Dano-->
+                            <div class="col-xl-4">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <p>Redução de Dano</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" id="pontosAcao" class="caixaEntrada">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Resistências-->
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/functions.js"></script>
+    </body>
+</html>
