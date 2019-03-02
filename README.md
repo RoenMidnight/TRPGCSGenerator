@@ -1,4 +1,4 @@
-<h1>**Gerador de Fichas para Tormenta RPG**</h1>
+<h1>Gerador de Fichas para Tormenta RPG</h1>
 
 <h2>Andamento do Projeto e Objetivos</h2>
 <ul>
