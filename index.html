@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
@@ -13,7 +14,7 @@
             
         </header>
 
-        <section>  
+        <section class="cabecalho-da-ficha">  
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-sm-12">
@@ -196,6 +197,7 @@
                         </div>                          
                     </div>
                     <div class="col-xl-10">
+                        <!--Cabecalho-->
                         <div class="row">
                             <div class="col-xl-8">
                                 <div class="row text-center">
@@ -234,8 +236,7 @@
                             </div>
                         </div>
                         <!--Classe de Armadura e RD-->
-                        <div class="row">
-                            
+                        <div class="row">                            
                             <div class="col-xl-8 classe_de_armadura text-center">
                                 <div class="row align-items-end">
                                     <!--Caixa CA-->
@@ -319,273 +320,330 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Resistências-->
-                        <div class="row">
-                            
+                        <!--Resistências & Perícias-->
+                        <div class="row text-center resistencias-e-pericias">
+                            <div class="col-6">
+                                <!--Cabecalho-->
+                                <div class="row align-items-end cabecalho">
+                                    <div class="col-2"><p>Resistência</p></div>
+                                    <div class="col-2"><p>Total</p></div>
+                                    <div class="col-2"><p>1/2 de nível</p></div>
+                                    <div class="col-2"><p>Mod. de Hab.</p></div>
+                                    <div class="col-2"><p>Outros</p></div>
+                                </div>
+                                <!--Fortitude-->
+                                <div class="row align-items-center corpo-resistencia">
+                                    <div class="col-2">
+                                        <div class="caixaTexto">
+                                            <div>
+                                                <p><b>Fort</b></p>
+                                                <p><b>Fortitude</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                </div>
+                                <!--Reflexos-->
+                                <div class="row align-items-center corpo-resistencia">
+                                    <div class="col-2">
+                                         <div class="caixaTexto">
+                                            <div>
+                                                <p><b>Refl</b></p>
+                                                <p><b>Reflexos</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                </div>
+                                <!--Vontade-->
+                                <div class="row align-items-center corpo-resistencia">
+                                    <div class="col-2">
+                                         <div class="caixaTexto">
+                                            <div>
+                                                <p><b>Vont</b></p>
+                                                <p><b>Vontade</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                    <div class="col-2"><input type="text" id="" class="caixaEntrada"></div>
+                                </div>
+                            </div>
+                            <div class="col-6 bordas">
+                                <div class="caixaPericias">
+                                    <div class="row cabecalho align-items-end" style="padding: 0px;">
+                                        <div class="col-1 caixaTitulo"><i class="fas fa-plus" style="cursor: pointer;"></i></div>
+                                        <div class="col-3 nomePericia caixaTitulo" >PERÍCIA</div>
+                                        <div class="col-2">TOTAL</div>
+                                        <div class="col-2">GRAD</div>
+                                        <div class="col-2">MOD. DE HABILIDADE</div>
+                                        <div class="col-2">OUTROS</div>
+                                    </div>
+                                    <div class="row pericia periciades">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">ACROBACIA</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_des" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">ADESTRAR ANIMAIS</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciafor">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">ATLETISMO</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_for" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">ATUAÇÃO<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">ATUAÇÃO<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciades">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">CAVALGAR</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_des" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">CONHECIMENTO<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">CONHECIMENTO<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">CONHECIMENTO<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciasab">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">CURA</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_sab" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">DIPLOMACIA</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">ENGANAÇÃO</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciades">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">FURTIVIDADE</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_des" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">IDENTIFICAR MAGIA</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciades">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">INICIATIVA</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_des" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">INTIMIDAÇÃO</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciasab">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">INTUIÇÃO</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_sab" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciades">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">LADINAGEM</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_des" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciacar">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">OBTER INFORMAÇÃO</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_car" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">OFICIOS<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">OFICIOS<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciaint">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">OFICIOS<input type="text" class="bordas"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_int" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciasab">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">PERCEPÇÃO</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_sab" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                    <div class="row pericia periciasab">
+                                        <div class="col-1"><input type="checkbox"></div>
+                                        <div class="col-3">SOBREVIVÊNCIA</div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"> </div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada mod_sab" size="3"></div>
+                                        <div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-           <div class="container caixaPericias bordas">
-              <div class="row">
-                 <div class="checkbox caixaTitulo">+</div>
-                 <div class="col-3 nomePericia caixaTitulo">PERÍCIA</div>
-                 <div class="col-1">TOTAL</div>
-                 <div class="col-1">GRAD</div>
-                 <div class="col-1">MOD. DE HABILIDADE</div>
-                 <div class="col-1">OUTROS</div>
-              </div>
-              <div class="row pericia periciades">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>ACROBACIA</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_des" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>ADESTRAR ANIMAIS</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciafor">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>ATLETISMO</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_for" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>ATUAÇÃO</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>ATUAÇÃO</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciades">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>CAVALGAR</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_des" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>CONHECIMENTO</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>CONHECIMENTO</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>CONHECIMENTO</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciasab">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>CURA</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_sab" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>DIPLOMACIA</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>ENGANAÇÃO</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciades">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>FURTIVIDADE</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_des" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>IDENTIFICAR MAGIA</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciades">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>INICIATIVA</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_des" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>INTIMIDAÇÃO</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciasab">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>INTUIÇÃO</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_sab" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciades">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>LADINAGEM</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_des" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciacar">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>OBTER INFORMAÇÃO</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_car" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>OFICIOS</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>OFICIOS</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciaint">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>OFICIOS</span><input type="text" class="bordas"></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_int" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciasab">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>PERCEPÇÃO</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_sab" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-              <div class="row pericia periciasab">
-                 <div class="checkbox"><input type="checkbox"></div>
-                 <div class="col-3"><span>SOBREVIVÊNCIA</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">=</span> </div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada">+</span></div>
-                 <div class="col-1"><span><input type="number" step="1" class="caixaEntrada mod_sab" size="3">+</span></div>
-                 <div class="col-1"><input type="number" step="1" class="caixaEntrada"></div>
-              </div>
-           </div>
-        </section>
 
+       
+     
         <section>
-           <div class="container caixaEquipamentos bordas">
-				<div class="row">
-					<div class="checkbox caixaTitulo">+</div>
-					<div class="col-3 nomePericia caixaTitulo">INVENTÁRIO</div>
-					<div class="col-1">QUANT.</div>
-					<div class="col-1">PREÇO</div>
-					<div class="col-1">PESO</div>
-              </div>
-			  <!-- (lembrar de criar um multiplicador pra isso.) -->
-			  <div class="row"> 
-					<div class="checkbox"></div>
-					<div class="col-3 nomePericia"><input class='bordas' type='text'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-              </div>
-			  <div class="row"> 
-					<div class="checkbox"></div>
-					<div class="col-3 nomePericia"><input class='bordas' type='text'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-              </div>
-			  <div class="row"> 
-					<div class="checkbox"></div>
-					<div class="col-3 nomePericia"><input class='bordas' type='text'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-              </div>
-			  
-			  
-			  <div class="row">
-					<div class="checkbox caixaTitulo"> </div>
-					<div class="col-3 nomePericia caixaTitulo">DINHEIRO</div>
-			  </div>
-			  <div class="row"> 
-					<div class="checkbox">TL</div>
-					<div class="checkbox"></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="checkbox">TO</div>
-					<div class="checkbox"></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="checkbox">TP</div>
-					<div class="checkbox"></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-					<div class="checkbox">T$</div>
-					<div class="checkbox"></div>
-					<div class="col-1"><input class='bordas' type='number'/></div>
-              </div>
-		   </div>
-		   
-		</section>
+                <div class="container caixaEquipamentos bordas">
+                     <div class="row">
+                         <div class="checkbox caixaTitulo">+</div>
+                         <div class="col-3 nomePericia caixaTitulo">INVENTÁRIO</div>
+                         <div class="col-1">QUANT.</div>
+                         <div class="col-1">PREÇO</div>
+                         <div class="col-1">PESO</div>
+                   </div>
+                   <!-- (lembrar de criar um multiplicador pra isso.) -->
+                   <div class="row"> 
+                         <div class="checkbox"></div>
+                         <div class="col-3 nomePericia"><input class='bordas' type='text'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                   </div>
+                   <div class="row"> 
+                         <div class="checkbox"></div>
+                         <div class="col-3 nomePericia"><input class='bordas' type='text'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                   </div>
+                   <div class="row"> 
+                         <div class="checkbox"></div>
+                         <div class="col-3 nomePericia"><input class='bordas' type='text'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                   </div>
+                   
+                   
+                   <div class="row">
+                         <div class="checkbox caixaTitulo"> </div>
+                         <div class="col-3 nomePericia caixaTitulo">DINHEIRO</div>
+                   </div>
+                   <div class="row"> 
+                         <div class="checkbox">TL</div>
+                         <div class="checkbox"></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="checkbox">TO</div>
+                         <div class="checkbox"></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="checkbox">TP</div>
+                         <div class="checkbox"></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                         <div class="checkbox">T$</div>
+                         <div class="checkbox"></div>
+                         <div class="col-1"><input class='bordas' type='number'/></div>
+                   </div>
+                </div>
+                
+        </section>
+     
 
         <footer>
 
