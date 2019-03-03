@@ -63,8 +63,8 @@
 	flex-direction: row;
 	}
 
-.checkbox { margin-left: 1%; width: 20px; }
-.caixaPericias span { flex-grow: 0; }
+.checkbox { padding-left: 1%; width: 20px; vertical-align: middle; }
+.caixaPericias span { margin-left: 5px; flex-grow: 0; }
 .caixaPericias div.col-1 { padding-left: 0px; padding-right: 1px; text-align: center; }
 .caixaPericias div.col-3 { padding-left: 0px; padding-right: 1px; }
 .caixaPericias input[type=number] { width:85%;  flex: 1 1 100%; }
@@ -75,6 +75,7 @@
 	display:flex;
 }
 .nomePericia { 
+	padding-left: ;
 	text-align: left; 
 }
 
@@ -112,7 +113,7 @@
     text-align: center;
     background-color: black;
     color: white;
-    white-space: nowrap;
-    display:table;
-    width: 100%;
+    display:inline;
+	vertical-align: middle;
+	margin-bottom: 10px;
 }
