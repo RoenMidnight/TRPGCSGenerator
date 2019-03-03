@@ -11,6 +11,15 @@
     border-bottom-width: 0.45mm;
 }
 
+.bordas {
+	border: 3px solid black;
+}
+
+.bordasfinas {
+	border: 1px solid black;
+}
+
+
 .caixaTexto {
     text-align: center;
     background-color: black;
@@ -47,6 +56,28 @@
     height: 100%;
 }
 
+.caixaPericias {  font-size: 0.75rem; }
+
+.pericia, .periciafor, .periciades, .periciacon, .periciaint, .periciasab, .periciacar {  
+	display:flex; 
+	flex-direction: row;
+	}
+
+.checkbox { margin-left: 1%; width: 20px; }
+.caixaPericias span { flex-grow: 0; }
+.caixaPericias div.col-1 { padding-left: 0px; padding-right: 1px; text-align: center; }
+.caixaPericias div.col-3 { padding-left: 0px; padding-right: 1px; }
+.caixaPericias input[type=number] { width:85%;  flex: 1 1 100%; }
+.caixaPericias input[type=text] { margin-left: 1%; min-width: 40%; max-width: 80%; flex: 1 1 100%; }
+
+
+.linhaPericia {
+	display:flex;
+}
+.nomePericia { 
+	text-align: left; 
+}
+
 .habilidades > div {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -65,7 +96,6 @@
     padding-right: 3px;
 }
 
-
 .classe_de_armadura .col-1 > .col-xl-12{
     padding:0px;
 }
@@ -75,4 +105,14 @@
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.caixaTitulo {
+	font-size: 1.0rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    display:table;
+    width: 100%;
 }
