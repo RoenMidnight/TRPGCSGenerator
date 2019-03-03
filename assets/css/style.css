@@ -11,6 +11,10 @@
     border-bottom-width: 0.45mm;
 }
 
+.bordas {
+	border: 3px solid black;
+}
+
 .caixaTexto {
     text-align: center;
     background-color: black;
@@ -45,6 +49,28 @@
     border: 3px solid black;
     width: 100%;
     height: 100%;
+}
+
+.caixaPericias {  font-size: 0.75rem; }
+
+.pericia, .periciafor, .periciades, .periciacon, .periciaint, .periciasab, .periciacar {  
+	display:flex; 
+	flex-direction: row;
+	}
+
+.checkbox { margin-left: 1%; width: 20px; }
+.caixaPericias span { flex-grow: 0; }
+.caixaPericias div.col-1 { padding-left: 0px; padding-right: 1px; }
+.caixaPericias div.col-3 { padding-left: 0px; padding-right: 1px; }
+.caixaPericias input[type=number] { width:85%;  flex: 1 1 100%; }
+.caixaPericias input[type=text] { display:inline; min-width: 40%; max-width: 80%; flex: 1 1 100%; }
+
+
+.linhaPericia {
+	display:flex;
+}
+.nomePericia { 
+	text-align: left; 
 }
 
 .habilidades > div {
