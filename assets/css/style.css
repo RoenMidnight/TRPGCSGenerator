@@ -79,6 +79,12 @@
 	text-align: left; 
 }
 
+.caixaEquipamentos span { margin-left: 5px; flex-grow: 0; }
+.caixaEquipamentos div.col-1 { padding-left: 0px; padding-right: 1px; text-align: center; }
+.caixaEquipamentos div.col-3 { padding-left: 0px; padding-right: 1px; }
+.caixaEquipamentos input[type=number] { width:85%;  flex: 1 1 100%; }
+.caixaEquipamentos input[type=text] { margin-left: 1%; width:100%; flex: 1 1 100%; }
+
 .habilidades > div {
     padding-top: 3px;
     padding-bottom: 3px;
