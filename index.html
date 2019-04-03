@@ -567,48 +567,54 @@
 </section>
 
 <section>
-    <div class="container caixaEquipamentos bordas">
-        <div class="col-12">
-        <div class="row">
-            <div class="col-1 fas fa-plus caixaTitulo" onclick="addEquipamento(this);"></div>
-            <div class="col-5 nomePericia caixaTitulo">INVENTÁRIO</div>
-            <div class="col-2">QUANT.</div>
-            <div class="col-2">PREÇO</div>
-            <div class="col-2">PESO</div>
-        </div>
-        <!-- (lembrar de criar um multiplicador pra isso.) -->
-        <div class="row"> 
-            <div class="col-1 fas fa-angle-down"></div>
-            <div class="col-5 nomePericia"><input class='bordas' type='text'/></div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-            <div class="col-12">DESCRIÇÃO<br><textarea class="bordas caixaTextArea descricaoItem"></textarea></div>
+    <div class="container caixaEquipamentos ">
+        <div class="row ">
+            <div class="col-6 bordas">
+                <div class="row">
+                        <div class="col-1 fas fa-plus caixaTitulo" onclick="addEquipamento(this);"></div>
+                        <div class="col-5 nomePericia caixaTitulo">INVENTÁRIO</div>
+                        <div class="col-2">QUANT.</div>
+                        <div class="col-2">PREÇO</div>
+                        <div class="col-2">PESO</div>
+                    <!-- (lembrar de criar um multiplicador pra isso.) -->
+                </div>
+                <div class="row caixaItem">
+					<div class="col-1 fas fa-angle-down"></div>
+					<div class="col-5 nomePericia"><input class='bordas' type='text'/></div>
+					<div class="col-2"><input class='bordas' type='number'/></div>
+					<div class="col-2"><input class='bordas' type='number'/></div>
+					<div class="col-2"><input class='bordas' type='number'/></div>
+					<div class="col-12">DESCRIÇÃO<br><textarea class="bordasfinas caixaTextArea descricaoItem"></textarea></div>
+				</div>
+				
+                <div class="row" id="caixaInformacoesDinheiro">
+                    <div class="checkbox caixaTitulo"> </div>
+                    <div class="col-6 nomePericia caixaTitulo">DINHEIRO</div>
+                </div>
+                <div class="row caixaItem">
+                    <div class="col-1">TL</div>
+                    <div class="col-2"><input class='bordas' type='number'/></div>
+                    <div class="col-1">TO</div>
+                    <div class="col-2"><input class='bordas' type='number'/></div>
+                    <div class="col-1">TP</div>
+                    <div class="col-2"><input class='bordas' type='number'/></div>
+                    <div class="col-1">T$</div>
+                    <div class="col-2"><input class='bordas' type='number'/></div>
+                </div>
+                
+            </div>
+            <div class="col-6">
+                <div class="row">
+					<div class="col-12">kirb</div>
+                </div>
+            </div>
         </div>
     </div>
-        <div class="col-12">
-        <div class="row">
-            <div class="checkbox caixaTitulo"> </div>
-            <div class="col-6 nomePericia caixaTitulo">DINHEIRO</div>
-        </div>
-        <div class="row"> 
-            <div class="col-1">TL</div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-            <div class="col-1">TO</div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-            <div class="col-1">TP</div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-            <div class="col-1">T$</div>
-            <div class="col-2"><input class='bordas' type='number'/></div>
-        </div>
-        </div>
-    </div>
-
 </section>
 
 
 <footer>
-    <div class="row></div>
+    <div class="row"></div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
