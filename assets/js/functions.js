@@ -16,12 +16,13 @@ function addPericia(element, atributo) {
 
 function addEquipamento(element) {
     var node = document.createElement("div");
-    node.className = 'row';
+    node.className = 'row caixaItem';
     node.innerHTML = '<div class="col-1 fas fa-angle-down" onclick="addEquipamento();"></div>' +
             '<div class="col-5 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
-            '<div class="col-12">DESCRIÇÃO<br><textarea class="bordas caixaTextArea descricaoItem"></textarea></div>';
-    element.parentElement.parentElement.insertBefore(node, element.parentElement.parentElement.lastChild);
+            '<div class="col-12">DESCRIÇÃO<br><textarea class="bordasfinas caixaTextArea descricaoItem"></textarea></div>';
+            //alert(element.parentElement.lastChild.innerHTML);
+    element.parentElement.parentElement.insertBefore(node, document.getElementById('caixaInformacoesDinheiro'));
 }
