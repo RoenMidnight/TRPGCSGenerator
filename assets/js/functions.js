@@ -17,36 +17,40 @@ function addPericia(element, atributo) {
 function addEquipamento(element, targetelement) {
     var node = document.createElement("div");
     node.className = 'row caixaItem';
-    node.innerHTML = '<div class="col-1 fas fa-angle-down" onclick="addEquipamento();"></div>' +
+    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-down" onclick="ocultarDescricao(this);"></i></div>' +
             '<div class="col-5 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-12">DESCRIÇÃO<br><textarea class="bordasfinas caixaTextArea descricaoItem"></textarea></div>';
-    element.parentElement.parentElement.insertBefore(node, document.getElementById(targetelement));
+    element.parentElement.parentElement.parentElement.insertBefore(node, document.getElementById(targetelement));
 }
 
 function addEquipamentoArma(element, targetelement) {
     var node = document.createElement("div");
     node.className = 'row caixaItem';
-    node.innerHTML = '<div class="col-1 fas fa-angle-down" onclick="addEquipamento();"></div>' +
+    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-down" onclick="ocultarDescricao(this);"></i></div>' +
             '<div class="col-3 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-12">DESCRIÇÃO<br><textarea class="bordasfinas caixaTextArea descricaoItem"></textarea></div>';
-    element.parentElement.parentElement.insertBefore(node, document.getElementById(targetelement));
+    element.parentElement.parentElement.parentElement.insertBefore(node, document.getElementById(targetelement));
 }
 
 function addEquipamentoArmadura(element, targetelement) {
     var node = document.createElement("div");
     node.className = 'row caixaItem';
-    node.innerHTML = '<div class="col-1 fas fa-angle-down" onclick="addEquipamento();"></div>' +
+    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-down" onclick="ocultarDescricao(this);"></i></div>' +
             '<div class="col-3 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-3"><input class="bordas" type="number"/></div>' +
             '<div class="col-3"><input class="bordas" type="number"/></div>' +
             '<div class="col-12">DESCRIÇÃO<br><textarea class="bordasfinas caixaTextArea descricaoItem"></textarea></div>';
-    element.parentElement.parentElement.insertBefore(node, document.getElementById(targetelement));
+    element.parentElement.parentElement.parentElement.insertBefore(node, document.getElementById(targetelement));
+}
+
+function ocultarDescricao(element) {
+	alert(element.parentElement.parentElement.lastChild.innerHTML);
 }
