@@ -72,6 +72,10 @@ section { padding-top: 2.5rem; }
     height:auto;
 }
 
+.caixaItem {
+	padding-top:4px;
+}
+
 .pericia, .periciafor, .periciades, .periciacon, .periciaint, .periciasab, .periciacar {  
 	display:flex; 
     flex-direction: row;
@@ -79,6 +83,7 @@ section { padding-top: 2.5rem; }
     -ms-flex-align: center!important;
     align-items: center!important;
 	}
+	
 
 .checkbox { padding-left: 1%; width: 20px; vertical-align: middle; }
 .caixaPericias span { margin-left: 5px; flex-grow: 0; }
