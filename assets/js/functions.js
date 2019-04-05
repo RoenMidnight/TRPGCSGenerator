@@ -52,6 +52,13 @@ function addEquipamentoArmadura(element, targetelement) {
 }
 
 function ocultarDescricao(element) {
-	$(element.parentElement.parentElement.lastChild).toggle();
-	$(element).toggleClass('fa-angle-down fa-angle-up');
+    $(element.parentElement.parentElement.lastChild).slideToggle("slow");;
+    $(element).toggleClass('fa-angle-down fa-angle-up');
+}
+
+function dropDownNaoSelecionados(thiselement, element_id) {
+    element = document.getElementById(element_id);
+    $(element).children().has(':checked').slideToggle(0);
+    $(element).children().slideToggle("slow");
+    $(thiselement).toggleClass('fa-angle-down fa-angle-up');
 }
