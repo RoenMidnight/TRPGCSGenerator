@@ -17,7 +17,7 @@ function addPericia(element, atributo) {
 function addEquipamento(element, targetelement) {
     var node = document.createElement("div");
     node.className = 'row caixaItem';
-    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-down" onclick="ocultarDescricao(this);"></i></div>' +
+    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-up" onclick="ocultarDescricao(this);"></i></div>' +
             '<div class="col-5 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
@@ -29,7 +29,7 @@ function addEquipamento(element, targetelement) {
 function addEquipamentoArma(element, targetelement) {
     var node = document.createElement("div");
     node.className = 'row caixaItem';
-    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-down" onclick="ocultarDescricao(this);"></i></div>' +
+    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-up" onclick="ocultarDescricao(this);"></i></div>' +
             '<div class="col-3 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
@@ -42,7 +42,7 @@ function addEquipamentoArma(element, targetelement) {
 function addEquipamentoArmadura(element, targetelement) {
     var node = document.createElement("div");
     node.className = 'row caixaItem';
-    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-down" onclick="ocultarDescricao(this);"></i></div>' +
+    node.innerHTML = '<div class="col-1"> <i class="fas fa-angle-up" onclick="ocultarDescricao(this);"></i></div>' +
             '<div class="col-3 nomePericia"><input class="bordas" type="text"/></div>' +
             '<div class="col-2"><input class="bordas" type="number"/></div>' +
             '<div class="col-3"><input class="bordas" type="number"/></div>' +
@@ -53,4 +53,5 @@ function addEquipamentoArmadura(element, targetelement) {
 
 function ocultarDescricao(element) {
 	$(element.parentElement.parentElement.lastChild).toggle();
+	$(element).toggleClass('fa-angle-down fa-angle-up');
 }
