@@ -52,5 +52,5 @@ function addEquipamentoArmadura(element, targetelement) {
 }
 
 function ocultarDescricao(element) {
-	alert(element.parentElement.parentElement.lastChild.innerHTML);
+	$(element.parentElement.parentElement.lastChild).toggle();
 }
