@@ -3,6 +3,9 @@
     src: url("../fonts/ScalaSans.ttf") format("truetype");
 }
 
+p { margin: 0;}
+section { padding-top: 2.5rem; }
+
 .linhaEntrada {
     width: 100%;
     border: 0.45mm #000000;
@@ -10,6 +13,16 @@
     white-space: nowrap;
     border-bottom-width: 0.45mm;
 }
+
+.bordas {
+	border: 3px solid black;
+}
+
+.bordasfinas {
+	border: 1px solid black;
+}
+
+.cabecalho { font-size: 0.5rem; }
 
 .caixaTexto {
     text-align: center;
@@ -26,6 +39,11 @@
 }
 .caixaTexto > div > p:nth-of-type(2) {
     font-size: 0.5rem;
+}
+
+.caixaTextArea {
+    width:100%;
+    height:100%;
 }
 
 .descricaoHabilidades{
@@ -47,32 +65,118 @@
     height: 100%;
 }
 
+.caixaPericias {  font-size: 0.75rem; }
+
+.descricaoItem {
+    min-height:100px;
+    height:auto;
+}
+
+.caixaItem {
+	padding-top:4px;
+}
+
+.pericia, .periciafor, .periciades, .periciacon, .periciaint, .periciasab, .periciacar {  
+	display:flex; 
+    flex-direction: row;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+	}
+	
+
+.checkbox { padding-left: 1%; width: 20px; vertical-align: middle; }
+.caixaPericias span { margin-left: 5px; flex-grow: 0; }
+.caixaPericias div.col-1 { padding-left: 0px; padding-right: 1px; text-align: center; }
+.caixaPericias div.col-3 { padding-left: 0px; padding-right: 1px; }
+.caixaPericias input[type=number] { width:85%;  flex: 1 1 100%; }
+.caixaPericias input[type=text] { margin-left: 1%; min-width: 40%; max-width: 80%; flex: 1 1 100%; }
+
+.linhaPericia {
+	display:flex;
+}
+.nomePericia { 
+	text-align: left; 
+}
+
+.imagemPersonagem {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 18rem;
+    padding: 2px;
+    top: 12px;
+}
+
+.caixaEquipamentos span { margin-left: 5px; flex-grow: 0; }
+.caixaEquipamentos div.col-1 { padding-left: 0px; padding-right: 1px; text-align: center; }
+.caixaEquipamentos div.col-3 { padding-left: 0px; padding-right: 1px; }
+.caixaEquipamentos input[type=number] { width:85%;  flex: 1 1 100%; }
+.caixaEquipamentos input[type=text] { margin-left: 1%; width:100%; flex: 1 1 100%; }
+
+
 .habilidades > div {
     padding-top: 3px;
     padding-bottom: 3px;
 }
 
-.habilidades .col-4{
+.habilidades .col-xl-4{
     padding: 3px;
 }
 
-.paginaFrente{
-    padding-top: 2.5rem;
+.corpo_habilidades .col-xl-4{
+    padding-bottom: 9px;
 }
 
-.classe_de_armadura .col-xl-1{
-    padding-left: 3px;
-    padding-right: 3px;
+.classe_de_armadura .col-2, .resistencias .col-2{
+    flex: 0 0 18.7%;
+    max-width: 18.7%;
 }
 
 
-.classe_de_armadura .col-1 > .col-xl-12{
-    padding:0px;
+.resistencias-e-pericias .row { padding-top: 5px; }
+
+.resistencias-e-pericias .corpo-resistencia .col-2:nth-of-type(2)::after { content:' = '; position: absolute; right: -5px; }
+.resistencias-e-pericias .corpo-resistencia .col-2:nth-of-type(3)::after, 
+.resistencias-e-pericias .corpo-resistencia .col-2:nth-of-type(4)::after { content:' + '; position: absolute; right: -5px; }
+
+.resistencias-e-pericias .periciafor .col-2:nth-of-type(3)::after, .resistencias-e-pericias .periciades .col-2:nth-of-type(3)::after,
+.resistencias-e-pericias .periciacon .col-2:nth-of-type(3)::after, .resistencias-e-pericias .periciaint .col-2:nth-of-type(3)::after,
+.resistencias-e-pericias .periciasab .col-2:nth-of-type(3)::after, .resistencias-e-pericias .periciacar .col-2:nth-of-type(3)::after
+{ content:' = '; position: absolute; right: -5px; }
+
+.resistencias-e-pericias .periciafor .col-2:nth-of-type(4)::after, .resistencias-e-pericias .periciades .col-2:nth-of-type(4)::after, 
+.resistencias-e-pericias .periciacon .col-2:nth-of-type(4)::after, .resistencias-e-pericias .periciaint .col-2:nth-of-type(4)::after, 
+.resistencias-e-pericias .periciasab .col-2:nth-of-type(4)::after, .resistencias-e-pericias .periciacar .col-2:nth-of-type(4)::after,
+.resistencias-e-pericias .periciafor .col-2:nth-of-type(5)::after, .resistencias-e-pericias .periciades .col-2:nth-of-type(5)::after,
+.resistencias-e-pericias .periciacon .col-2:nth-of-type(5)::after, .resistencias-e-pericias .periciaint .col-2:nth-of-type(5)::after,
+.resistencias-e-pericias .periciasab .col-2:nth-of-type(5)::after, .resistencias-e-pericias .periciacar .col-2:nth-of-type(5)::after
+{ content:' + '; position: absolute; right: -5px; }
+
+
+.caixaTitulo {
+	font-size: 1.0rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display:inline;
+	vertical-align: middle;
+	padding-bottom: 10px;
 }
 
-.classe_de_armadura .col-xl-12 > p{
-    font-size: 0.5rem;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+@media(max-width:900px){
+    .classe_de_armadura .col-2, .resistencias .col-2{
+        padding: 0px 3px;
+    }
+
+    .classe_de_armadura .col-3, .resistencias .col-3{
+        padding: 0px 3px;
+    }
+
+    .pontos_de_vida .col-3{
+        padding: 0px 3px;
+    }
 }
