@@ -1,4 +1,5 @@
 function addPericia(element, atributo) {
+
     let node = document.createElement("div");
     node.className = "row pericia pericia" + atributo;
     node.innerHTML = '<div class="col-1"><input type="checkbox"></div>' +
