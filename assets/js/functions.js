@@ -9,8 +9,7 @@ function addPericia(element, atributo) {
             '<div class="col-2"><input type="number" step="1" class="caixaEntrada mod_' + atributo + '" placeholder="' + atributo + '" size="3"></div>' +
             '<div class="col-2"><input type="number" step="1" class="caixaEntrada"></div>';
     if (atributo == "") {
-	element = document.getElementById("peric-body");
-        element.insertBefore(node, element.lastChild);
+	$('.caixaPericias').append(node);
     } else {
         element.parentElement.parentElement.parentElement.insertBefore(node, element.parentElement.parentElement.nextElementSibling);
     }
