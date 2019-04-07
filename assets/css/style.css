@@ -4,7 +4,7 @@
 }
 
 p { margin: 0;}
-section { padding-top: 2.5rem; }
+section { padding-top: 1.25rem; padding-bottom: 1.25rem; }
 
 .linhaEntrada {
     width: 100%;
@@ -82,7 +82,8 @@ section { padding-top: 2.5rem; }
     -webkit-box-align: center!important;
     -ms-flex-align: center!important;
     align-items: center!important;
-	}
+    padding: 1px 0px;
+}
 	
 
 .checkbox { padding-left: 1%; width: 20px; vertical-align: middle; }
